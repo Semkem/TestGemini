@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Palais des Arts",
+    "type": "MuseumReplacement",
+    "productionCost": 260,
+    "maintenance": 3,
+    "culture": 6,
+    "uniques": [
+      "[+6] [Tourism]",
+      "Free [LoyaltyLevel_200] upon construction"
+    ],
+    "uniqueTo": "France (XXL)",
+    "civilopediaText": ["Grand museum generating culture and tourism."]
+  },
+  {
+    "name": "Salon Litteraire",
+    "type": "SpecialBuilding",
+    "productionCost": 140,
+    "maintenance": 2,
+    "culture": 3,
+    "uniques": [
+      "[+3] [Tourism]",
+      "[+2] [Culture]",
+      "[+1] [Tourism] per [10] [Science] in this city"
+    ],
+    "uniqueTo": "France (XXL)",
+    "civilopediaText": ["Literary salon. Tourism scales with city science."]
+  },
+  {
+    "name": "Academie de Mode",
+    "type": "SpecialBuilding",
+    "productionCost": 200,
+    "maintenance": 2,
+    "culture": 4,
+    "gold": 1,
+    "uniques": [
+      "[+4] [Tourism]",
+      "[+5] [Loyalty]"
+    ],
+    "uniqueTo": "France (XXL)",
+    "civilopediaText": ["Fashion academy providing culture and loyalty."]
+  },
+  {
+    "name": "Elysee Palace",
+    "isWonder": true,
+    "productionCost": 500,
+    "maintenance": 3,
+    "culture": 5,
+    "uniques": [
+      "[+50] [Loyalty]",
+      "[+10]% [Loyalty] [in all cities]"
+    ],
+    "uniqueTo": "France (XXL)",
+    "civilopediaText": ["Increases loyalty empire-wide."]
+  },
+  {
+    "name": "Industrial Engineers Corps",
+    "type": "SpecialBuilding",
+    "productionCost": 220,
+    "maintenance": 2,
+    "production": 3,
+    "uniques": [
+      "[-25]% construction cost of [All] buildings",
+      "[+15] [Loyalty]"
+    ],
+    "uniqueTo": "France (XXL)",
+    "civilopediaText": ["Speeds up reconstruction."]
+  },
+
+  // --- МЕНЮ ЗАХВАТА ГОРОДА ---
+  {
+    "name": "City Capture Menu",
+    "uniqueTo": "France (XXL)",
+    "cost": 1,
+    "isWonder": true,
+    "civilopediaText": ["Temporary menu to decide the fate of a captured city."],
+    "choices": [
+      {
+        "name": "Preserve All (+Loyalty)",
+        "effects": [
+          {"type": "gainStockpiledResource", "resource": "Loyalty", "amount": 200},
+          {"type": "removeBuilding", "building": "City Capture Menu"}
+        ]
+      },
+      {
+        "name": "Loot Science (Burn Libraries)",
+        "effects": [
+          {"type": "removeBuilding", "building": "Library"},
+          {"type": "removeBuilding", "building": "University"},
+          {"type": "gainStockpiledResource", "resource": "Gold", "amount": 100},
+          {"type": "removeBuilding", "building": "City Capture Menu"}
+        ]
+      },
+      {
+        "name": "Loot Culture (Burn Theaters)",
+        "effects": [
+          {"type": "removeBuilding", "building": "Monument"},
+          {"type": "removeBuilding", "building": "Amphitheater"},
+          {"type": "gainStockpiledResource", "resource": "Tourism", "amount": 50},
+          {"type": "removeBuilding", "building": "City Capture Menu"}
+        ]
+      },
+      {
+        "name": "Total Destruction (Max Loot)",
+        "effects": [
+          {"type": "destroyPercentageBuildings", "amount": 80},
+          {"type": "gainStockpiledResource", "resource": "Gold", "amount": 300},
+          {"type": "removeBuilding", "building": "City Capture Menu"}
+        ]
+      }
+    ]
+  },
+
+  // --- СКРЫТЫЕ ЗДАНИЯ (МАРКЕРЫ ЛОЯЛЬНОСТИ) ---
+  // Используем их как "мешки" с лояльностью, которые выдаются скриптом (или вручную через decisions)
+  {
+    "name": "LoyaltyLevel_200",
+    "isHidden": true,
+    "cost": 1,
+    "uniques": ["[+200] [Loyalty]"],
+    "civilopediaText": ["Hidden marker"]
+  }
+]
