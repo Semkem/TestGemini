@@ -1,0 +1,19 @@
+{
+  "name": "France XXL: Revolution & Loyalty",
+  "version": "1.0",
+  "description": "Глобальная переработка Франции. Система Лояльности, Туризм, Меню захвата городов, 15 новых юнитов.",
+  "author": "Semyon",
+  "minGameVersion": "4.18.14",
+  "files": [
+    "jsons/Nations.json",
+    "jsons/Units.json",
+    "jsons/Buildings.json",
+    "jsons/Resources.json",
+    "jsons/Techs.json",
+    "jsons/Policies.json",
+    "jsons/VictoryTypes.json",
+    "jsons/TileImprovements.json",
+    "jsons/Localisation_ru.json",
+    "jsons/Localisation_en.json"
+  ]
+}
