@@ -1,0 +1,44 @@
+[
+  {
+    "name": "France",
+    "outerColor": [0, 56, 168],
+    "innerColor": [255, 255, 255],
+    "uniqueName": "France (XXL)",
+    "adjective": ["French"],
+    "startBias": ["Plains", "River"],
+    "cities": ["Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier"],
+    "uniques": [
+      // --- БАЗОВЫЕ БОНУСЫ ---
+      "[+20]% [Culture] [in Capital]",
+      "[+2 Culture] from [World Wonder]s",
+      "Double quantity of [Horses]",
+
+      // --- НОВЫЕ МЕХАНИКИ (СИМУЛЯЦИЯ ТРИГГЕРОВ) ---
+      
+      // 1. ТУРИЗМ: Конвертируем культуру в туризм (упрощенная формула для движка)
+      "[+1 Tourism] per [4] [Culture] [in all cities]",
+      
+      // 2. ЛОЯЛЬНОСТЬ: Зависит от счастья
+      "[+5 Loyalty] [in all cities] <if [Happiness] > 0>",
+      "[+10 Loyalty] [in all cities] <if [Happiness] > 15>",
+      
+      // 3. НАУКА И ПРОСВЕЩЕНИЕ
+      "[+1 Science] [in all cities] <requires [University]>",
+      "[+1 Culture] [in all cities] <requires [University]>",
+
+      // 4. ДИПЛОМАТИЧЕСКИЙ ЭТИКЕТ
+      "[-10]% maintenance on [Diplomatic] units",
+
+      // 5. МЕНЮ ЗАХВАТА (Выдаем здание-меню при захвате)
+      "Free [City Capture Menu] upon city capture",
+
+      // Возможности
+      "Can raze capitals",
+      "Can build [Château Royal] improvement on [Plains]",
+      "Can build [Vignoble] improvement on [Hills]"
+    ],
+    "prefersVictory": "Culture",
+    "startIntroPart1": "The Grand Nation rises.",
+    "startIntroPart2": "Will you lead through culture or revolution?"
+  }
+]
