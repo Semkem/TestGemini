@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Tourism",
+    "resourceType": "Stockpiled",
+    "uniques": ["City-level resource"],
+    "civilopediaText": ["Накапливается в городах. Нужен для Культурной Победы."]
+  },
+  {
+    "name": "Loyalty",
+    "resourceType": "Stockpiled",
+    "uniques": ["City-level resource"],
+    "civilopediaText": ["Показывает преданность города. Высокая лояльность дает бонусы, низкая ведет к разрушениям."]
+  },
+  {
+    "name": "Champagne",
+    "resourceType": "Luxury",
+    "terrains": ["Plains", "Hill"],
+    "improvement": "Vignoble",
+    "gold": 4,
+    "culture": 2
+  },
+  {
+    "name": "Fromage",
+    "resourceType": "Luxury",
+    "gold": 2,
+    "food": 2
+  },
+  {
+    "name": "Lavande",
+    "resourceType": "Luxury",
+    "terrains": ["Grassland"],
+    "improvement": "Plantation",
+    "gold": 2,
+    "culture": 2
+  }
+]
