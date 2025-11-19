@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Cultural Dominance",
+    "victoryScreenHeader": "Cultural Victory",
+    "victoryString": "Your culture dominates the world!",
+    "defeatString": "You have been culturally assimilated.",
+    "milestones": [
+      "Have more [Tourism] than each player's [Culture]",
+      "Have > [200] [Tourism]"
+    ],
+    "requiredTech": "Archaeology"
+  }
+]
