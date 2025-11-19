@@ -63,7 +63,7 @@
     "requiredResource": "Oil",
     "uniques": ["[-1] Movement"]
   },
-  // ... добавь остальных юнитов по аналогии, используя этот шаблон ...
+  
   {
     "name": "Chasseur Alpin",
     "unitType": "Gunpowder Unit",
