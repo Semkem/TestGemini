@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Franc Archer",
+    "unitType": "Archery",
+    "replaces": "Archer",
+    "uniqueTo": "France (XXL)",
+    "movement": 2,
+    "strength": 8,
+    "rangedStrength": 11,
+    "cost": 40,
+    "requiredTech": "Archery",
+    "uniques": ["[-15]% Strength <vs [Melee] units>"] 
+  },
+  {
+    "name": "Mousquetaire du Roi",
+    "unitType": "Gunpowder Unit",
+    "replaces": "Musketman",
+    "uniqueTo": "France (XXL)",
+    "movement": 2,
+    "strength": 29,
+    "cost": 150,
+    "requiredTech": "Gunpowder",
+    "uniques": [
+      "Bonus vs City Capture (33)",
+      "[-10]% Strength <in [Open Terrain] tiles>"
+    ]
+  },
+  {
+    "name": "Garde Impériale",
+    "unitType": "Gunpowder Unit",
+    "replaces": "Rifleman",
+    "uniqueTo": "France (XXL)",
+    "movement": 2,
+    "strength": 40,
+    "cost": 225,
+    "requiredTech": "Grande Armée Tactics",
+    "uniques": [
+      "Can move after attacking",
+      "[+20]% maintenance costs"
+    ]
+  },
+  {
+    "name": "Cuirassier Républicain",
+    "unitType": "Mounted Unit",
+    "replaces": "Cavalry",
+    "uniqueTo": "France (XXL)",
+    "movement": 5,
+    "strength": 46,
+    "cost": 250,
+    "requiredTech": "Grande Armée Tactics",
+    "requiredResource": "Horses",
+    "uniques": ["[-25]% Strength <vs [City] units>"]
+  },
+  {
+    "name": "Char de Combat B1",
+    "unitType": "Armored Unit",
+    "replaces": "Tank",
+    "uniqueTo": "France (XXL)",
+    "movement": 3,
+    "strength": 80,
+    "cost": 380,
+    "requiredTech": "Combustion",
+    "requiredResource": "Oil",
+    "uniques": ["[-1] Movement"]
+  },
+  // ... добавь остальных юнитов по аналогии, используя этот шаблон ...
+  {
+    "name": "Chasseur Alpin",
+    "unitType": "Gunpowder Unit",
+    "replaces": "Great War Infantry",
+    "uniqueTo": "France (XXL)",
+    "movement": 2,
+    "strength": 55,
+    "cost": 320,
+    "requiredTech": "Replaceable Parts",
+    "uniques": ["[-10]% Strength <in [Flat] tiles>"]
+  }
+]
