@@ -67,7 +67,7 @@
     "civilopediaText": ["Speeds up reconstruction."]
   },
 
-  // --- МЕНЮ ЗАХВАТА ГОРОДА ---
+  
   {
     "name": "City Capture Menu",
     "uniqueTo": "France (XXL)",
@@ -111,8 +111,8 @@
     ]
   },
 
-  // --- СКРЫТЫЕ ЗДАНИЯ (МАРКЕРЫ ЛОЯЛЬНОСТИ) ---
-  // Используем их как "мешки" с лояльностью, которые выдаются скриптом (или вручную через decisions)
+  
+  
   {
     "name": "LoyaltyLevel_200",
     "isHidden": true,
