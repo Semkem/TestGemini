@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Vignoble",
+    "uniqueTo": "France (XXL)",
+    "terrains": ["Hill", "Plains"],
+    "requiredTech": "Viticulture",
+    "uniques": ["[+3 Gold]", "[+1 Food]", "[+1 Culture]", "Connects luxury resource"]
+  },
+  {
+    "name": "Château Royal",
+    "uniqueTo": "France (XXL)",
+    "terrains": ["Plains", "Grassland"],
+    "requiredTech": "Chivalry",
+    "uniques": ["[+3 Gold]", "[+3 Culture]", "[+50]% defense for units on this tile"]
+  }
+]
