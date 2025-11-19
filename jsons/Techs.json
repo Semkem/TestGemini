@@ -1,0 +1,8 @@
+[
+  {"name": "Viticulture", "cost": 150, "era": "Classical", "prerequisites": ["Pottery"], "column": 3},
+  {"name": "Chanson de Geste", "cost": 90, "era": "Classical", "prerequisites": ["Drama and Poetry"], "column": 4},
+  {"name": "Gothic Masonry", "cost": 240, "era": "Medieval", "prerequisites": ["Construction"], "column": 6},
+  {"name": "Court Diplomacy", "cost": 480, "era": "Renaissance", "prerequisites": ["Chivalry"], "column": 8},
+  {"name": "Grande Armée Tactics", "cost": 1800, "era": "Industrial", "prerequisites": ["Military Science"], "column": 10},
+  {"name": "Académie des Sciences", "cost": 1100, "era": "Industrial", "prerequisites": ["Scientific Theory"], "column": 10}
+]
